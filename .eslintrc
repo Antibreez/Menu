@@ -1,0 +1,29 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": "htmlacademy/es6",
+  "rules": {
+    // Additional rules...
+  }
+}
+
+/*
+root: true
+
+parserOptions:
+  ecmaVersion: 6
+  sourceType: "module"
+
+env:
+  browser: true
+  es6: true
+
+extends:
+  "htmlacademy/es6"
+  */

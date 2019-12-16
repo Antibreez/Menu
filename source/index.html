@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+<body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item  main-nav__item--flatrack">
+        <svg class="main-nav__icon" role="img" width="65" height="21">
+          <use xlink:href="#icon-flatrack"></use>
+        </svg>
+        <span>Flat Rack контейнеры</span>
+      </li>
+      <li class="main-nav__item  main-nav__item--opentop">
+        <svg class="main-nav__icon" role="img" width="64" height="20">
+          <use xlink:href="#icon-opentop"></use>
+        </svg>
+        <span>Опен топ контейнеры</span>
+      </li>
+      <li class="main-nav__item  main-nav__item--tank  main-nav__item--active">
+        <svg class="main-nav__icon" role="img" width="48" height="21">
+          <use xlink:href="#icon-tank"></use>
+        </svg>
+        <span>Танк-контейнеры</span>
+      </li>
+      <li class="main-nav__item  main-nav__item--thermo">
+        <svg class="main-nav__icon" role="img" width="68" height="18">
+          <use xlink:href="#icon-thermo"></use>
+        </svg>
+        <span>Термо-контейнер</span>
+      </li>
+      <li class="main-nav__item  main-nav__item--universal">
+        <svg class="main-nav__icon" role="img" width="68" height="18">
+          <use xlink:href="#icon-universal"></use>
+        </svg>
+        <span>Универсальный контейнер</span>
+      </li>
+    </ul>
+  </nav>
+  <nav class="secondary-nav">
+    <div class="secondary-nav__wrap">
+      <div class="secondary-nav__container">
+        <ul class="secondary-nav__list  hidden">
+          <li>
+            <span>Перевозка других грузов</span>
+          </li>
+          <li>
+            <span>Перевозка других грузов</span>
+          </li>
+          <li>
+            <span>Перевозка других грузов</span>
+          </li>
+          <li>
+            <span>Перевозка других грузов</span>
+          </li>
+          <li>
+            <span>Перевозка других грузов</span>
+          </li>
+          <li>
+            <span>Перевозка других грузов</span>
+          </li>
+          <li>
+            <span>Перевозка других грузов</span>
+          </li>
+        </ul>
+        <ul class="secondary-nav__list  hidden">
+          <li>
+            <span>Перевозка еще других грузов</span>
+          </li>
+          <li>
+            <span>Перевозка еще других грузов</span>
+          </li>
+          <li>
+            <span>Перевозка еще других грузов</span>
+          </li>
+          <li>
+            <span>Перевозка еще других грузов</span>
+          </li>
+          <li>
+            <span>Перевозка еще других грузов</span>
+          </li>
+          <li>
+            <span>Перевозка еще других грузов</span>
+          </li>
+          <li>
+            <span>Перевозка еще других грузов</span>
+          </li>
+        </ul>
+        <ul class="secondary-nav__list">
+          <li>
+            <svg class="secondary-nav__icon  secondary-nav__icon--glass" role="img" width="27" height="33">
+              <use xlink:href="#icon-glass"></use>
+            </svg>
+            <span>Перевозка пищевых грузов</span>
+            <div class="visually-hidden">
+              <ul class="third-nav">
+                <li class="third-nav__level-1">
+                  Спирты пищевые
+                </li>
+                <li class="third-nav__level-1">
+                  Масла
+                </li>
+                <li class="third-nav__level-1">
+                  Соки
+                </li>
+                <li class="third-nav__level-1">
+                  Концентраты соков
+                </li>
+                <li class="third-nav__level-1">
+                  Пищевые добавки
+                </li>
+                <li class="third-nav__level-1">
+                  Патока
+                </li>
+                <li class="third-nav__level-1">
+                  Виноматериал
+                </li>
+                <li class="third-nav__level-1">
+                  Прочее
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <svg class="secondary-nav__icon  secondary-nav__icon--gases" role="img" width="22" height="33">
+              <use xlink:href="#icon-gases"></use>
+            </svg>
+            <span>Перевозка сжиженных газов</span>
+            <div class="visually-hidden">
+              <ul class="third-nav">
+                <li class="third-nav__level-1">
+                  1
+                </li>
+                <li class="third-nav__level-1">
+                  111
+                </li>
+                <li class="third-nav__level-1">
+                  1111111
+                </li>
+                <li class="third-nav__level-1">
+                  11111
+                </li>
+                <li class="third-nav__level-1">
+                  1111
+                </li>
+                <li class="third-nav__level-1">
+                  1111111111
+                </li>
+                <li class="third-nav__level-1">
+                  111
+                </li>
+                <li class="third-nav__level-1">
+                  11
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <svg class="secondary-nav__icon  secondary-nav__icon--chemical" role="img" width="24" height="33">
+              <use xlink:href="#icon-chemical"></use>
+            </svg>
+            <span>Перевозка химических грузов</span>
+            <div class="visually-hidden">
+              <ul class="third-nav  third-nav--deep">
+                <li class="third-nav__level-1">
+                  Кислоты
+                </li>
+                <li class="third-nav__level-1">
+                  Щелочи
+                </li>
+                <li class="third-nav__level-1">
+                  Спирты
+                </li>
+                <li class="third-nav__level-1">
+                  Растворители
+                </li>
+                <li class="third-nav__level-1">
+                  Соли
+                </li>
+                <li class="third-nav__level-1">
+                  Эфиры
+                </li>
+                <li class="third-nav__level-1">
+                  Хлориды
+                </li>
+                <li class="third-nav__level-1">
+                  Прочее
+                </li>
+              </ul>
+              <div class="third-nav__inner-list-wrap">
+                <ul class="third-nav__inner-list  hidden">
+                  <li class="third-nav__level-2">
+                    <a class="third-nav__inner-link" href="#">Фенол расплавленный</a>
+                  </li>
+                  <li class="third-nav__level-2">
+                    <a class="third-nav__inner-link" href="#">Олеум</a>
+                  </li>
+                  <li class="third-nav__level-2">
+                    <a class="third-nav__inner-link" href="#">Хлорная кислота</a>
+                  </li>
+                  <li class="third-nav__level-2">
+                    <a class="third-nav__inner-link" href="#">Нитрилакриловая кислота</a>
+                  </li>
+                  <li class="third-nav__level-2">
+                    <a class="third-nav__inner-link" href="#">Серная кислота</a>
+                  </li>
+                  <li class="third-nav__level-2">
+                    <a class="third-nav__inner-link" href="#">Азотная кислота</a>
+                  </li>
+                  <li class="third-nav__level-2">
+                    <a class="third-nav__inner-link" href="#">Ортофосфорная кислота</a>
+                  </li>
+                </ul>
+                <ul class="third-nav__inner-list  hidden">
+                  <li class="third-nav__level-2">
+                    1
+                  </li>
+                  <li class="third-nav__level-2">
+                    1
+                  </li>
+                  <li class="third-nav__level-2">
+                    1
+                  </li>
+                  <li class="third-nav__level-2">
+                    1
+                  </li>
+                  <li class="third-nav__level-2">
+                    1
+                  </li>
+                  <li class="third-nav__level-2">
+                    1
+                  </li>
+                  <li class="third-nav__level-2">
+                    1
+                  </li>
+                </ul>
+                <ul class="third-nav__inner-list  hidden">
+                  <li class="third-nav__level-2">
+                    5
+                  </li>
+                  <li class="third-nav__level-2">
+                    5
+                  </li>
+                  <li class="third-nav__level-2">
+                    5
+                  </li>
+                  <li class="third-nav__level-2">
+                    5
+                  </li>
+                  <li class="third-nav__level-2">
+                    5
+                  </li>
+                  <li class="third-nav__level-2">
+                    5
+                  </li>
+                  <li class="third-nav__level-2">
+                    5
+                  </li>
+                </ul>
+                <ul class="third-nav__inner-list  hidden">
+                  <li class="third-nav__level-2">
+                    6
+                  </li>
+                  <li class="third-nav__level-2">
+                    6
+                  </li>
+                  <li class="third-nav__level-2">
+                    6
+                  </li>
+                  <li class="third-nav__level-2">
+                    6
+                  </li>
+                  <li class="third-nav__level-2">
+                    6
+                  </li>
+                  <li class="third-nav__level-2">
+                    6
+                  </li>
+                  <li class="third-nav__level-2">
+                    6
+                  </li>
+                </ul>
+                <ul class="third-nav__inner-list  hidden">
+                  <li class="third-nav__level-2">
+                    2
+                  </li>
+                  <li class="third-nav__level-2">
+                    2
+                  </li>
+                  <li class="third-nav__level-2">
+                    2
+                  </li>
+                  <li class="third-nav__level-2">
+                    2
+                  </li>
+                  <li class="third-nav__level-2">
+                    2
+                  </li>
+                  <li class="third-nav__level-2">
+                    2
+                  </li>
+                  <li class="third-nav__level-2">
+                    2
+                  </li>
+                </ul>
+                <ul class="third-nav__inner-list  hidden">
+                  <li class="third-nav__level-2">
+                    3
+                  </li>
+                  <li class="third-nav__level-2">
+                    3
+                  </li>
+                  <li class="third-nav__level-2">
+                    3
+                  </li>
+                  <li class="third-nav__level-2">
+                    3
+                  </li>
+                  <li class="third-nav__level-2">
+                    3
+                  </li>
+                  <li class="third-nav__level-2">
+                    3
+                  </li>
+                  <li class="third-nav__level-2">
+                    3
+                  </li>
+                </ul>
+                <ul class="third-nav__inner-list  hidden">
+                  <li class="third-nav__level-2">
+                    4
+                  </li>
+                  <li class="third-nav__level-2">
+                    4
+                  </li>
+                  <li class="third-nav__level-2">
+                    4
+                  </li>
+                  <li class="third-nav__level-2">
+                    4
+                  </li>
+                  <li class="third-nav__level-2">
+                    4
+                  </li>
+                  <li class="third-nav__level-2">
+                    4
+                  </li>
+                  <li class="third-nav__level-2">
+                    4
+                  </li>
+                </ul>
+                <ul class="third-nav__inner-list  hidden">
+                  <li class="third-nav__level-2">
+                    Прочее
+                  </li>
+                  <li class="third-nav__level-2">
+                    Прочее
+                  </li>
+                  <li class="third-nav__level-2">
+                    Прочее
+                  </li>
+                  <li class="third-nav__level-2">
+                    Прочее
+                  </li>
+                  <li class="third-nav__level-2">
+                    Прочее
+                  </li>
+                  <li class="third-nav__level-2">
+                    Прочее
+                  </li>
+                  <li class="third-nav__level-2">
+                    Прочее
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>Перевозка химических грузов</span>
+          </li>
+          <li>
+            <span>Перевозка химических грузов</span>
+          </li>
+          <li>
+            <span>Перевозка химических грузов</span>
+          </li>
+          <li>
+            <span>Перевозка химических грузов</span>
+          </li>
+          <li>
+            <span>Перевозка химических грузов</span>
+          </li>
+          <li>
+            <span>Перевозка химических грузов</span>
+          </li>
+          <li>
+            <span>Перевозка химических грузов</span>
+            <div class="visually-hidden">
+              <ul class="third-nav">
+                <li class="third-nav__level-1">
+                  2
+                </li>
+                <li class="third-nav__level-1">
+                  222
+                </li>
+                <li class="third-nav__level-1">
+                  222222222
+                </li>
+                <li class="third-nav__level-1">
+                  2222
+                </li>
+                <li class="third-nav__level-1">
+                  22
+                </li>
+                <li class="third-nav__level-1">
+                  2
+                </li>
+                <li class="third-nav__level-1">
+                  222
+                </li>
+                <li class="third-nav__level-1">
+                  22222
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="secondary-nav__list  hidden">
+          <li>
+            <span>Перевозка грузов</span>
+          </li>
+          <li>
+            <span>Перевозка грузов</span>
+          </li>
+          <li>
+            <span>Перевозка грузов</span>
+          </li>
+          <li>
+            <span>Перевозка грузов</span>
+          </li>
+          <li>
+            <span>Перевозка грузов</span>
+          </li>
+          <li>
+            <span>Перевозка грузов</span>
+          </li>
+          <li>
+            <span>Перевозка грузов</span>
+          </li>
+        </ul>
+        <ul class="secondary-nav__list  hidden">
+          <li>
+            <span>Перевозка</span>
+          </li>
+          <li>
+            <span>Перевозка</span>
+          </li>
+          <li>
+            <span>Перевозка</span>
+          </li>
+          <li>
+            <span>Перевозка</span>
+          </li>
+          <li>
+            <span>Перевозка</span>
+          </li>
+          <li>
+            <span>Перевозка</span>
+          </li>
+          <li>
+            <span>Перевозка</span>
+          </li>
+        </ul>
+      </div>
+      <div class="third-nav-container">
+        <!-- <ul class="third-nav">
+          <li>
+            Спирты пищевые
+          </li>
+          <li>
+            Масла
+          </li>
+          <li>
+            Соки
+          </li>
+          <li>
+            Концентраты соков
+          </li>
+          <li>
+            Пищевые добавки
+          </li>
+          <li>
+            Патока
+          </li>
+          <li>
+            Виноматериал
+          </li>
+          <li>
+            Прочее
+          </li>
+        </ul> -->
+      </div>
+    </div>
+  </nav>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

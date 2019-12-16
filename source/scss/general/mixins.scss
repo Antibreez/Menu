@@ -1,0 +1,19 @@
+// СБРОС СТИЛЕЙ
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// ШРИФТЫ
+@mixin font-face($name, $filename, $weight) {
+  @font-face {
+    font-family: $name;
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/"+$filename+".woff2") format("woff2"),
+      url("../fonts/"+$filename+".woff") format("woff");
+  }
+}

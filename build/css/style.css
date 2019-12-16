@@ -642,6 +642,7 @@ img {
   margin-left: -10px;
   border: 10px solid transparent;
   border-bottom-color: #ffffff;
+  z-index: 101;
 }
 
 .secondary-nav__list > li::before {

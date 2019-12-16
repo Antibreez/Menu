@@ -210,6 +210,8 @@
 
     border: 10px solid transparent;
     border-bottom-color: #ffffff;
+
+    z-index: 101;
   }
 
   &::before {

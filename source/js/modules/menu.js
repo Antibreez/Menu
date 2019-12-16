@@ -1,12 +1,16 @@
 (function () {
+  let hided = 0;
+
   let nav = priorityNav.init({
     navDropdownLabel: ``,
     mainNavWrapper: `.main-nav`,
     breakPoint: 300,
   });
 
+
   let body = document.querySelector(`body`);
   let mainNav = document.querySelector(`.main-nav`);
+  let mainNavList = document.querySelector(`.main-nav__list`);
   let secondaryNavs = document.querySelectorAll(`.secondary-nav__list`);
   let secondaryNavBox = document.querySelector(`.secondary-nav__container`);
   let mainNavItems = document.querySelectorAll(`.main-nav__item`);
@@ -135,6 +139,7 @@
 
     function onMouseUp(e) {
       let item;
+      let isActive = false;
 
       if (!moved) {
         let target = e.target;
@@ -144,7 +149,13 @@
           : null;
       }
 
-      if (item && !item.classList.contains(`active`)) {
+      if (item && item.classList.contains(`active`)) {
+        item.classList.remove(`active`);
+        thirdNavContainer.innerHTML = ``;
+        isActive = true;
+      }
+
+      if (item && !item.classList.contains(`active`) && !isActive) {
         clearActive(currentSecondaryNav.querySelectorAll(`li`), `active`);
         item.classList.add(`active`);
 
@@ -187,13 +198,6 @@
 
             thirdNavContainer.style.left = `auto`;
             thirdNavContainer.style.right = 0;
-            // let value = thirdNavContainer.style.left === 0
-            //   ? 0
-            //   : +thirdNavContainer.style.left.slice(0, -2);
-
-            // thirdNavContainer.style.left = value - (thirdNavContainer.getBoundingClientRect().right - document.body.clientWidth) === 0
-            //   ? 0
-            //   : value - (thirdNavContainer.getBoundingClientRect().right - document.body.clientWidth) + `px`;
           }
         }
       }
@@ -256,13 +260,6 @@
   mainNavItems.forEach(function (item, idx) {
     item.setAttribute(`index`, idx);
   });
-
-  // secondaryNavs.forEach(function (nav) {
-  //   let items = nav.querySelectorAll(`li`);
-  //   items.forEach(function (item, idx) {
-  //     item.setAttribute(`index`, idx);
-  //   });
-  // });
 
   body.addEventListener(`mousedown`, onAnyClick);
   window.addEventListener(`resize`, onResize);
